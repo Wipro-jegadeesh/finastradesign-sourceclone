@@ -1,0 +1,15 @@
+@import 'angular-theme/lib/core/style/spacing';
+
+uxg-filter-tags {
+	.filter-tags-container {
+		.chip-list {
+			width: 100%;
+			margin-top: $uxg-spacing-2;
+
+			input.mat-chip-input {
+				margin: inherit;
+				flex: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+@mixin uxg-skeleton-text-theme($theme) {
+    $foreground: map-get($theme, foreground);
+
+    $background-color: mat-color($foreground, text, 0.065);
+    $background-color-animated: mat-color($foreground, text, 0.135);
+    
+    uxg-skeleton-text {
+        background: $background-color;
+
+        &[animated] {
+            background-image: linear-gradient(to right, $background-color 8%, $background-color-animated 18%, $background-color 33%);
+        }
+    }
+}
